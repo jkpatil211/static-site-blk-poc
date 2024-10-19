@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047) -->
+<html lang="en">
+
+<head>
+  <title>Static Html edit poc | BlackRock</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    :root,
+    :host {
+      --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+      --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+      --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+      --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+      --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+      --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+      --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+      --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+    }
+
+    svg:not(:root).svg-inline--fa,
+    svg:not(:host).svg-inline--fa {
+      overflow: visible;
+      box-sizing: content-box;
+    }
+
+    .svg-inline--fa {
+      display: var(--fa-display, inline-block);
+      height: 1em;
+      overflow: visible;
+      vertical-align: -0.125em;
+    }
+
+    .svg-inline--fa.fa-2xs {
+      vertical-align: 0.1em;
+    }
+
+    .svg-inline--fa.fa-xs {
+      vertical-align: 0em;
+    }
+
+    .svg-inline--fa.fa-sm {
+      vertical-align: -0.0714285705em;
+    }
+
+    .svg-inline--fa.fa-lg {
+      vertical-align: -0.2em;
+    }
+
+    .svg-inline--fa.fa-xl {
+      vertical-align: -0.25em;
+    }
+
+    .svg-inline--fa.fa-2xl {
+      vertical-align: -0.3125em;
+    }
+
+    .svg-inline--fa.fa-pull-left {
+      margin-right: var(--fa-pull-margin, 0.3em);
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-pull-right {
+      margin-left: var(--fa-pull-margin, 0.3em);
+      width: auto;
+    }
+
+    .svg-inline--fa.fa-li {
+      width: var(--fa-li-width, 2em);
+      top: 0.25em;
+    }
+
+    .svg-inline--fa.fa-fw {
+      width: var(--fa-fw-width, 1.25em);
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .fa-layers-counter,
+    .fa-layers-text {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+    }
+
+    .fa-layers {
+      display: inline-block;
+      height: 1em;
+      position: relative;
+      text-align: center;
+      vertical-align: -0.125em;
+      width: 1em;
+    }
+
+    .fa-layers svg.svg-inline--fa {
+      transform-origin: center center;
+    }
+
+    .fa-layers-text {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: center center;
+    }
+
+    .fa-layers-counter {
+      background-color: var(--fa-counter-background-color, #ff253a);
+      border-radius: var(--fa-counter-border-radius, 1em);
+      box-sizing: border-box;
+      color: var(--fa-inverse, #fff);
+      line-height: var(--fa-counter-line-height, 1);
+      max-width: var(--fa-counter-max-width, 5em);
+      min-width: var(--fa-counter-min-width, 1.5em);
+      overflow: hidden;
+      padding: var(--fa-counter-padding, 0.25em 0.5em);
+      right: var(--fa-right, 0);
+      text-overflow: ellipsis;
+      top: var(--fa-top, 0);
+      transform: scale(var(--fa-counter-scale, 0.25));
+      transform-origin: top right;
+    }
+
+    .fa-layers-bottom-right {
+      bottom: var(--fa-bottom, 0);
+      right: var(--fa-right, 0);
+      top: auto;
+      transform: scale(var(--fa-layers-scale, 0.25));
+      transform-origin: bottom right;
+    }
+
+    .fa-layers-bottom-left {
+      bottom: var(--fa-bottom, 0);
+      left: var(--fa-left, 0);
+      right: auto;
+      top: auto;
+      transform: scale(var(--fa-layers-scale, 0.25));
+      transform-origin: bottom left;
+    }
+
+    .fa-layers-top-right {
+      top: var(--fa-top, 0);
+      right: var(--fa-right, 0);
+      transform: scale(var(--fa-layers-scale, 0.25));
+      transform-origin: top right;
+    }
+
+    .fa-layers-top-left {
+      left: var(--fa-left, 0);
+      right: auto;
+      top: var(--fa-top, 0);
+      transform: scale(var(--fa-layers-scale, 0.25));
+      transform-origin: top left;
+    }
+
+    .fa-1x {
+      font-size: 1em;
+    }
+
+    .fa-2x {
+      font-size: 2em;
+    }
+
+    .fa-3x {
+      font-size: 3em;
+    }
+
+    .fa-4x {
+      font-size: 4em;
+    }
+
+    .fa-5x {
+      font-size: 5em;
+    }
+
+    .fa-6x {
+      font-size: 6em;
+    }
+
+    .fa-7x {
+      font-size: 7em;
+    }
+
+    .fa-8x {
+      font-size: 8em;
+    }
+
+    .fa-9x {
+      font-size: 9em;
+    }
+
+    .fa-10x {
+      font-size: 10em;
+    }
+
+    .fa-2xs {
+      font-size: 0.625em;
+      line-height: 0.1em;
+      vertical-align: 0.225em;
+    }
+
+    .fa-xs {
+      font-size: 0.75em;
+      line-height: 0.0833333337em;
+      vertical-align: 0.125em;
+    }
+
+    .fa-sm {
+      font-size: 0.875em;
+      line-height: 0.0714285718em;
+      vertical-align: 0.0535714295em;
+    }
+
+    .fa-lg {
+      font-size: 1.25em;
+      line-height: 0.05em;
+      vertical-align: -0.075em;
+    }
+
+    .fa-xl {
+      font-size: 1.5em;
+      line-height: 0.0416666682em;
+      vertical-align: -0.125em;
+    }
+
+    .fa-2xl {
+      font-size: 2em;
+      line-height: 0.03125em;
+      vertical-align: -0.1875em;
+    }
+
+    .fa-fw {
+      text-align: center;
+      width: 1.25em;
+    }
+
+    .fa-ul {
+      list-style-type: none;
+      margin-left: var(--fa-li-margin, 2.5em);
+      padding-left: 0;
+    }
+
+    .fa-ul>li {
+      position: relative;
+    }
+
+    .fa-li {
+      left: calc(-1 * var(--fa-li-width, 2em));
+      position: absolute;
+      text-align: center;
+      width: var(--fa-li-width, 2em);
+      line-height: inherit;
+    }
+
+    .fa-border {
+      border-color: var(--fa-border-color, #eee);
+      border-radius: var(--fa-border-radius, 0.1em);
+      border-style: var(--fa-border-style, solid);
+      border-width: var(--fa-border-width, 0.08em);
+      padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+    }
+
+    .fa-pull-left {
+      float: left;
+      margin-right: var(--fa-pull-margin, 0.3em);
+    }
+
+    .fa-pull-right {
+      float: right;
+      margin-left: var(--fa-pull-margin, 0.3em);
+    }
+
+    .fa-beat {
+      animation-name: fa-beat;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+    .fa-bounce {
+      animation-name: fa-bounce;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+    }
+
+    .fa-fade {
+      animation-name: fa-fade;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    }
+
+    .fa-beat-fade {
+      animation-name: fa-beat-fade;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+    }
+
+    .fa-flip {
+      animation-name: fa-flip;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+    .fa-shake {
+      animation-name: fa-shake;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, linear);
+    }
+
+    .fa-spin {
+      animation-name: fa-spin;
+      animation-delay: var(--fa-animation-delay, 0s);
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 2s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, linear);
+    }
+
+    .fa-spin-reverse {
+      --fa-animation-direction: reverse;
+    }
+
+    .fa-pulse,
+    .fa-spin-pulse {
+      animation-name: fa-spin;
+      animation-direction: var(--fa-animation-direction, normal);
+      animation-duration: var(--fa-animation-duration, 1s);
+      animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+      animation-timing-function: var(--fa-animation-timing, steps(8));
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      .fa-beat,
+      .fa-bounce,
+      .fa-fade,
+      .fa-beat-fade,
+      .fa-flip,
+      .fa-pulse,
+      .fa-shake,
+      .fa-spin,
+      .fa-spin-pulse {
+        animation-delay: -1ms;
+        animation-duration: 1ms;
+        animation-iteration-count: 1;
+        transition-delay: 0s;
+        transition-duration: 0s;
+      }
+    }
+
+    @keyframes fa-beat {
+
+      0%,
+      90% {
+        transform: scale(1);
+      }
+
+      45% {
+        transform: scale(var(--fa-beat-scale, 1.25));
+      }
+    }
+
+    @keyframes fa-bounce {
+      0% {
+        transform: scale(1, 1) translateY(0);
+      }
+
+      10% {
+        transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+      }
+
+      30% {
+        transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+      }
+
+      50% {
+        transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+      }
+
+      57% {
+        transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+      }
+
+      64% {
+        transform: scale(1, 1) translateY(0);
+      }
+
+      100% {
+        transform: scale(1, 1) translateY(0);
+      }
+    }
+
+    @keyframes fa-fade {
+      50% {
+        opacity: var(--fa-fade-opacity, 0.4);
+      }
+    }
+
+    @keyframes fa-beat-fade {
+
+      0%,
+      100% {
+        opacity: var(--fa-beat-fade-opacity, 0.4);
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(var(--fa-beat-fade-scale, 1.125));
+      }
+    }
+
+    @keyframes fa-flip {
+      50% {
+        transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+      }
+    }
+
+    @keyframes fa-shake {
+      0% {
+        transform: rotate(-15deg);
+      }
+
+      4% {
+        transform: rotate(15deg);
+      }
+
+      8%,
+      24% {
+        transform: rotate(-18deg);
+      }
+
+      12%,
+      28% {
+        transform: rotate(18deg);
+      }
+
+      16% {
+        transform: rotate(-22deg);
+      }
+
+      20% {
+        transform: rotate(22deg);
+      }
+
+      32% {
+        transform: rotate(-12deg);
+      }
+
+      36% {
+        transform: rotate(12deg);
+      }
+
+      40%,
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+
+    @keyframes fa-spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .fa-rotate-90 {
+      transform: rotate(90deg);
+    }
+
+    .fa-rotate-180 {
+      transform: rotate(180deg);
+    }
+
+    .fa-rotate-270 {
+      transform: rotate(270deg);
+    }
+
+    .fa-flip-horizontal {
+      transform: scale(-1, 1);
+    }
+
+    .fa-flip-vertical {
+      transform: scale(1, -1);
+    }
+
+    .fa-flip-both,
+    .fa-flip-horizontal.fa-flip-vertical {
+      transform: scale(-1, -1);
+    }
+
+    .fa-rotate-by {
+      transform: rotate(var(--fa-rotate-angle, 0));
+    }
+
+    .fa-stack {
+      display: inline-block;
+      vertical-align: middle;
+      height: 2em;
+      position: relative;
+      width: 2.5em;
+    }
+
+    .fa-stack-1x,
+    .fa-stack-2x {
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: var(--fa-stack-z-index, auto);
+    }
+
+    .svg-inline--fa.fa-stack-1x {
+      height: 1em;
+      width: 1.25em;
+    }
+
+    .svg-inline--fa.fa-stack-2x {
+      height: 2em;
+      width: 2.5em;
+    }
+
+    .fa-inverse {
+      color: var(--fa-inverse, #fff);
+    }
+
+    .sr-only,
+    .fa-sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .sr-only-focusable:not(:focus),
+    .fa-sr-only-focusable:not(:focus) {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    .svg-inline--fa .fa-primary {
+      fill: var(--fa-primary-color, currentColor);
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa .fa-secondary {
+      fill: var(--fa-secondary-color, currentColor);
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-primary {
+      opacity: var(--fa-secondary-opacity, 0.4);
+    }
+
+    .svg-inline--fa.fa-swap-opacity .fa-secondary {
+      opacity: var(--fa-primary-opacity, 1);
+    }
+
+    .svg-inline--fa mask .fa-primary,
+    .svg-inline--fa mask .fa-secondary {
+      fill: black;
+    }
+
+    .fad.fa-inverse,
+    .fa-duotone.fa-inverse {
+      color: var(--fa-inverse, #fff);
+    }
+  </style>
+  <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Static website instrumented with universal editor">
+  <!-- AEM MEat Tags -->
+  <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://author-p140494-e1434146.adobeaemcloud.com">
+  <meta name="urn:adobe:aue:config:extensions" content="https://47679-workflowextension.adobeio-static.net">
+
+  <link rel="apple-touch-icon" href="logo192.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- <script defer="defer" src="./scripts/main.6081129b.js.download"></script> -->
+  <link href="./styles/main.904e4224.css" rel="stylesheet">
+  <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
+  
+  <!-- <script src="./html-blk-poc_files/LATEST" async="true"></script> -->
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="container-fluid">
+      <div class="row" style="box-shadow: rgb(165, 161, 161) -1px 3px 5px -3px;">
+        <div class="mx-auto col-lg-11 col-sm-11 col-11">
+          <nav class="bg-body-primary mt-4 pb-3 navbar navbar-expand-xl navbar-light">
+            <div class="container-fluid"><a href="#"
+                class="col-2 navbar-brand"><img
+                  src="./assets/blackrock-logo-sitemap.d5cae9dd5dffdf841093382b81f586c9.svg"></a><button
+                aria-controls="offcanvasNavbar-expand-xl" type="button" aria-label="Toggle navigation"
+                class="navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
+              <div id="offcanvasNavbar-expand-xl" class="offcanvas offcanvas-end"
+                aria-labelledby="offcanvasNavbarLabel-expand-xl">
+                <div class="offcanvas-header">
+                  <div class="offcanvas-title h5" id="offcanvasNavbarLabel-expand-xl"><img
+                      src="./assets/blackrock-logo-sitemap.d5cae9dd5dffdf841093382b81f586c9.svg"></div>
+                  <button type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="justify-content-start flex-grow-1 pe-3 menu navbar-nav"><a
+                      href="#action1" data-rr-ui-event-key="#action1"
+                      class="nav-link">About us</a><a href="#action2"
+                      data-rr-ui-event-key="#action2" class="nav-link">Funds</a><a
+                      href="#action2" data-rr-ui-event-key="#action2"
+                      class="nav-link">Solutions</a></div>
+                  <div class="searchContainer">
+                    <div class="search-inline-container"><input class="nav-search" type="text"
+                        placeholder="Enter fund or keyword">
+                      <div class="search-icon"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                          data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img"
+                          xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <path fill="currentColor"
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                          </path>
+                        </svg></div>
+                    </div><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot"
+                      class="svg-inline--fa fa-location-dot fa-xl " role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512" font-weight="bold">
+                      <path fill="currentColor"
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                      </path>
+                    </svg><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-user"
+                      class="svg-inline--fa fa-circle-user fa-xl " role="img" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512" font-weight="bold">
+                      <path fill="currentColor"
+                        d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z">
+                      </path>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="banner pt-5 row">
+        <div class="mx-auto py-5 col-lg-11 col-sm-11 col-11">
+          <div class="vstack gap-3">
+            <div
+              data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/copy-of-banner-headline/jcr:content/data/master"
+              data-aue-type="reference" data-aue-title="banner-headline">
+              <div>
+                <h2 class="eyebrow" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">Funds at
+                  Blackrock new change</h2>
+                <div style="width: 32px; height: 3px; background-color: rgb(255, 71, 19);"></div>
+              </div>
+              <div class="headline col-xl-10 col-sm-11 col-xs-11 fs-xs-1 my-5" data-aue-type="text"
+                data-aue-prop="title" data-aue-label="title">Funds that match up with investing goals and preferences.
+                We have what you need updated new</div>
+              <div class="intro col-xl-7 col-lg-7 fw-medium" data-aue-type="richtext" data-aue-prop="description"
+                data-aue-label="description">
+                <p><strong>Updated</strong> Each&nbsp;<strong>investor</strong> has a different
+                  <strong><em>story</em></strong>, and we are <em><strong>steadfast</strong></em> partners to our
+                  clients in the UK because we listen to every one of them. Our full range of funds is one
+                  <strong>way</strong> we're helping more investors build solid <u>financial</u> futures new</p>
+              </div>
+            </div>
+            <div class="searchbox">
+              <div class="search-form-container searchBar-color-white"><input type="text" id="searchTextOpt"
+                  name="searchText" maxlength="500" data-enableautocomplete="true"
+                  placeholder="Search for a fund or ticker"
+                  class="searchBar-color-white search-text-freeform-variant ticker ui-autocomplete-input"
+                  autocomplete="off">
+                <div class="fa-search"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                    data-icon="magnifying-glass" class="svg-inline--fa fa-magnifying-glass " role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor"
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z">
+                    </path>
+                  </svg></div>
+              </div>
+            </div>
+            <div class="tiles-block">
+              <div class="tiles row">
+                <div class="tile col-lg-6 col-11" data-aue-type="reference"
+                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/fifth-card/jcr:content/data/master">
+                  <div class="content-wrapper">
+                    <div class="tile-content ">
+                      <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                        Indexing</div>
+                      <div class="sub-headline" data-aue-type="text" data-aue-prop="subHeadline"
+                        data-aue-label="subHeadline">Investing that works for everyone</div>
+                      <div class="description" data-aue-type="text" data-aue-prop="description"
+                        data-aue-label="description">
+                        <p>Fifty years of indexing have proven investing doesn’t need to be expensive, or complex.
+                          There’s quite literally an index fund for every market exposure and investment strategy you
+                          could possibly need, which means more opportunities for more investors. Rajesh&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="cta">
+                      <div class="cta-container-box"><a href="#"
+                          target="_self" class="cta button primary core"><span class="label"><span class="icon"
+                              aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="font-size: 16px;">
+                                <path fill="currentColor"
+                                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                </path>
+                              </svg></span><span data-aue-type="text" data-aue-prop="urlLabel"
+                              data-aue-label="urlLabel">Learn more about indexing</span></span></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile col-lg-6 col-11" data-aue-type="reference"
+                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/first-card/jcr:content/data/master">
+                  <div class="content-wrapper">
+                    <div class="tile-content ">
+                      <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                        Equities new</div>
+                      <div class="sub-headline" data-aue-type="text" data-aue-prop="subHeadline"
+                        data-aue-label="subHeadline">Buying shares for the long-term updated</div>
+                      <div class="description" data-aue-type="text" data-aue-prop="description"
+                        data-aue-label="description">
+                        <p>When you invest in equity, you buy a share in a company and become a shareholder. Equities
+                          are typically best for long-term investing – for those who are able to ride out the highs and
+                          lows of the market in search of higher rewards.&nbsp;&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="cta">
+                      <div class="cta-container-box"><a href="#"
+                          target="_self" class="cta button primary core"><span class="label"><span class="icon"
+                              aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="font-size: 16px;">
+                                <path fill="currentColor"
+                                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                </path>
+                              </svg></span><span data-aue-type="text" data-aue-prop="urlLabel"
+                              data-aue-label="urlLabel">Learn more here now</span></span></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile col-lg-6 col-11" data-aue-type="reference"
+                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/forth-card/jcr:content/data/master">
+                  <div class="content-wrapper">
+                    <div class="tile-content ">
+                      <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                        Cashless facility</div>
+                      <div class="sub-headline" data-aue-type="text" data-aue-prop="subHeadline"
+                        data-aue-label="subHeadline">Bank accounts aren’t the only option available</div>
+                      <div class="description" data-aue-type="text" data-aue-prop="description"
+                        data-aue-label="description">
+                        <p>If you're looking for better rates of return on deposits than you’d get in an ordinary bank
+                          account, cash funds may be a great option. They often invest in very short-term bonds known as
+                          ‘money market instruments’, which are essentially banks lending money to each other.&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="cta">
+                      <div class="cta-container-box"><a href="#"
+                          target="_self" class="cta button primary core"><span class="label"><span class="icon"
+                              aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="font-size: 16px;">
+                                <path fill="currentColor"
+                                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                </path>
+                              </svg></span><span data-aue-type="text" data-aue-prop="urlLabel"
+                              data-aue-label="urlLabel">See all cash funds</span></span></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile col-lg-6 col-11" data-aue-type="reference"
+                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/second-card/jcr:content/data/master">
+                  <div class="content-wrapper">
+                    <div class="tile-content ">
+                      <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                        Fixed Income Resources</div>
+                      <div class="sub-headline" data-aue-type="text" data-aue-prop="subHeadline"
+                        data-aue-label="subHeadline">Seeking stable, lower risk returns</div>
+                      <div class="description" data-aue-type="text" data-aue-prop="description"
+                        data-aue-label="description">
+                        <p>Fixed income securities, or bonds, are issued by companies and governments as a way of
+                          raising money. They’re basically an ‘I.O.U’ – designed to provide a regular stream of income
+                          (which is normally a fixed amount) over a specified period of time.&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="cta">
+                      <div class="cta-container-box"><a href="#"
+                          target="_self" class="cta button primary core"><span class="label"><span class="icon"
+                              aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="font-size: 16px;">
+                                <path fill="currentColor"
+                                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                </path>
+                              </svg></span><span data-aue-type="text" data-aue-prop="urlLabel"
+                              data-aue-label="urlLabel">See all fixed income fundsa</span></span></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile col-lg-6 col-11" data-aue-type="reference"
+                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/sixth-card/jcr:content/data/master">
+                  <div class="content-wrapper">
+                    <div class="tile-content ">
+                      <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                        Multi-Asset</div>
+                      <div class="sub-headline" data-aue-type="text" data-aue-prop="subHeadline"
+                        data-aue-label="subHeadline">Diversifying your portfolio</div>
+                      <div class="description" data-aue-type="text" data-aue-prop="description"
+                        data-aue-label="description">
+                        <p>A multi-asset strategy combines different types of assets – stocks, bonds, real estate, or
+                          cash for example – to create a more nimble and broadly diversified portfolio. Fund managers
+                          will balance asset classes to achieve particular investment objectives.&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="cta">
+                      <div class="cta-container-box"><a href="#"
+                          target="_self" class="cta button primary core"><span class="label"><span class="icon"
+                              aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="font-size: 16px;">
+                                <path fill="currentColor"
+                                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                </path>
+                              </svg></span><span data-aue-type="text" data-aue-prop="urlLabel"
+                              data-aue-label="urlLabel">Learn more about Multi-Asset</span></span></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tile col-lg-6 col-11" data-aue-type="reference"
+                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/third-card/jcr:content/data/master">
+                  <div class="content-wrapper">
+                    <div class="tile-content ">
+                      <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                        Alternatives</div>
+                      <div class="sub-headline" data-aue-type="text" data-aue-prop="subHeadline"
+                        data-aue-label="subHeadline">Driven by diverse sources of returns</div>
+                      <div class="description" data-aue-type="text" data-aue-prop="description"
+                        data-aue-label="description">
+                        <p>While traditional assets like stocks and bonds are traded on the public markets, alternative
+                          investment strategies such as real estate, infrastructure, and private credit are less
+                          sensitive to the movements of global markets.&nbsp;</p>
+                      </div>
+                    </div>
+                    <div class="cta">
+                      <div class="cta-container-box"><a href="#"
+                          target="_self" class="cta button primary core"><span class="label"><span class="icon"
+                              aria-hidden="true"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                                data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="font-size: 16px;">
+                                <path fill="currentColor"
+                                  d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                                </path>
+                              </svg></span><span data-aue-type="text" data-aue-prop="urlLabel"
+                              data-aue-label="urlLabel">Learn more about alternatives</span></span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/teaser/jcr:content/data/master"
+        data-aue-type="reference" data-aue-title="teaser">
+        <div class="teaser row">
+          <div class="mx-auto py-5 px-2 col-xl-11 col-lg-11 col-sm-11">
+            <div class="row">
+              <div class="pe-5 col">
+                <div class="vstack gap-3">
+                  <div class="text-responsive" data-aue-type="richtext" data-aue-prop="descriptionOne"
+                    data-aue-label="descriptionOne">
+                    <p><strong>BlackRock</strong> recommends that investors see a qualified financial adviser before
+                      making a long-term investment decision new.</p>
+                  </div>
+                  <div class="text-responsive" data-aue-type="richtext" data-aue-prop="descriptionTwo"
+                    data-aue-label="descriptionTwo">
+                    <p>All new <strong>investments</strong> involve some degree of risk, and your money may be tied up
+                      for <strong>some</strong> time. It is therefore important to act on the best advice available
+                      before embarking on more complex savings plans such as pensions or funds that aim to meet school
+                      fees. Alternatively, investors can talk to BlackRock’s Investor Services team for general
+                      enquiries, please note that our team are not authorised to provide any financial
+                      <u><strong>advice</strong></u>.</p>
+                  </div>
+                  <div class="text-responsive" data-aue-type="richtext" data-aue-prop="descriptionThree"
+                    data-aue-label="descriptionThree">
+                    <p>All new <em><strong>financial</strong></em> investments involve an element of risk. Therefore,
+                      the value of your investment and the income from it will vary and your initial investment
+                      <strong>amount</strong> cannot be <span style="text-decoration: underline;">guaranteed</span>.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-5 col-sm-11"><img src="./assets/thumb-why-blackrock-new.jpg"
+                  data-aue-prop="image" data-aue-type="media" class="img-fluid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sitemap row">
+        <div class="mx-auto col-lg-11 col-sm-11 col-11">
+          <div class="sitemap blackrock combined-with-nav" id="vi20-sitemap-combined" style="min-height: 500px;">
+            <div class="multibrand-sitemap__wrapper wrapper-980">
+              <div class="multibrand-sitemap__row row">
+                <div class="multibrand-sitemap__column col-6">
+                  <div class="sitemap__column__header"><span>About us</span></div>
+                  <ul class="multibrand-sitemap__column__l2-l3-container row">
+                    <li class="col-6 l2-l3-item-container">
+                      <ul class="l3-item-container">
+                        <li><a href="https://jkpatil211.github.io/uk/about-us/who-we-are" data-id="Who we are"
+                            data-link-event="About us:Who we are" class="l3-item clickable-item">Who we are</a> </li>
+                        <li><a href="https://jkpatil211.github.io/uk/about-us/about-blackrock/what-we-do"
+                            data-id="What we do" data-link-event="About us:What we do"
+                            class="l3-item clickable-item">What we do</a> </li>
+                        <li><a href="https://jkpatil211.github.io/uk/about-us/investment-stewardship"
+                            data-id="Investment stewardship" data-link-event="About us:Investment stewardship"
+                            target="_top" class="l3-item clickable-item">Investment stewardship</a> </li>
+                        <li><a href="https://www.ishares.com/uk/individual/en/education/about-ishares"
+                            data-id="About iShares" data-link-event="About us:About iShares" target="_blank"
+                            class="l3-item clickable-item">About iShares</a> </li>
+                      </ul>
+                    </li>
+                    <li class="col-6 l2-l3-item-container">
+                      <ul class="l3-item-container">
+                        <li><a href="https://www.blackrock.com/corporate" data-link-event="resource-link:Our company"
+                            target="_blank" class="l3-item clickable-item"> Our company</a> </li>
+                        <li><a href="https://careers.blackrock.com/" data-link-event="resource-link:Careers"
+                            target="_blank" class="l3-item clickable-item"> Careers</a> </li>
+                        <li><a href="https://jkpatil211.github.io/uk/contact-us"
+                            data-link-event="resource-link:Contact us" target="_self" class="l3-item clickable-item">
+                            Contact us</a> </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="multibrand-sitemap__column col-6">
+                  <div class="sitemap__column__header"><span>Funds</span></div>
+                  <ul class="multibrand-sitemap__column__l2-l3-container row">
+                    <li class="l2-l3-item-container col-6">
+                      <div class="l2-header">All Investors</div>
+                      <ul class="l3-item-container " aria-label="All Investors">
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/products/product-list#/?productView=all&amp;fsac=43535|43580|43581|43584|43585|43615"
+                            data-id="Equity" data-link-event="Funds:Equity" target="_top"
+                            class="l3-item clickable-item">Equity</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/products/product-list#/?productView=all&amp;fsac=43552|43556|43569|43586|43589|43625|43768|43777|43779"
+                            data-id="Multi-Asset" data-link-event="Funds:Multi-Asset" target="_top"
+                            class="l3-item clickable-item">Multi-Asset</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/products/product-list#/?productView=all&amp;fsac=43549|43563|43566|43573|43588|43774|43775|60556"
+                            data-id="Fixed income" data-link-event="Funds:Fixed income" target="_top"
+                            class="l3-item clickable-item">Fixed income</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/products/product-list#/?productView=all&amp;fsac=43587|43597|43608"
+                            data-id="Commodity" data-link-event="Funds:Commodity" target="_top"
+                            class="l3-item clickable-item">Commodity</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/products/product-list#/?productView=all&amp;fsac=43542"
+                            data-id="Cash" data-link-event="Funds:Cash" target="_top"
+                            class="l3-item clickable-item">Cash</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/products/product-list#/?productView=all&amp;fsac=43776|OTHR43530"
+                            data-id="Real estate" data-link-event="Funds:Real estate" target="_top"
+                            class="l3-item clickable-item">Real estate</a> </li>
+                        <li class=""><a href="https://jkpatil211.github.io/uk/solutions/charities" data-id="Charities"
+                            data-link-event="Funds:Charities" class="l3-item clickable-item">Charities</a> </li>
+                        <li class="bottom-links"><a href="https://jkpatil211.github.io/uk/products/product-list"
+                            data-link-event="resource-link:View all funds" target="_self" class="clickable-item"><span
+                              class="label">View all funds</span><svg aria-hidden="true" focusable="false"
+                              data-prefix="fas" data-icon="angle-right"
+                              class="svg-inline--fa fa-angle-right viewAllIcon" role="img"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                              <path fill="currentColor"
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                              </path>
+                            </svg></a></li>
+                      </ul>
+                    </li>
+                    <li class="l2-l3-item-container col-6">
+                      <div class="l2-header">Professionals</div>
+                      <ul class="l3-item-container " aria-label="Professionals">
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries#/?productView=all&amp;fsac=43535|43580|43581|43584|43585|43615"
+                            data-id="Equity" data-link-event="Funds:Equity" class="l3-item clickable-item">Equity</a>
+                        </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries#/?productView=all&amp;fsac=43549|43563|43566|43573|43588|43774|43775|60556|61384|43567"
+                            data-id="Fixed income" data-link-event="Funds:Fixed income"
+                            class="l3-item clickable-item">Fixed income</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries#/?productView=all&amp;fsac=43552|43556|43569|43586|43589|43625|43768|43777|43779"
+                            data-id="Multi-Asset" data-link-event="Funds:Multi-Asset"
+                            class="l3-item clickable-item">Multi-Asset</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries#/?productView=all&amp;fsac=43587|43597|43608"
+                            data-id="Commodity" data-link-event="Funds:Commodity"
+                            class="l3-item clickable-item">Commodity</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries#/?productView=all&amp;fsac=43542"
+                            data-id="Cash" data-link-event="Funds:Cash" class="l3-item clickable-item">Cash</a> </li>
+                        <li class=""><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries#/?productView=all&amp;fsac=43776|OTHR43530"
+                            data-id="Real Estate" data-link-event="Funds:Real Estate"
+                            class="l3-item clickable-item">Real Estate</a> </li>
+                        <li class="bottom-links"><a
+                            href="https://jkpatil211.github.io/uk/professionals/products/product-list?userType=intermediaries"
+                            data-link-event="resource-link:View all funds" target="_self" class="clickable-item"><span
+                              class="label">View all funds</span><svg aria-hidden="true" focusable="false"
+                              data-prefix="fas" data-icon="angle-right"
+                              class="svg-inline--fa fa-angle-right viewAllIcon" role="img"
+                              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                              <path fill="currentColor"
+                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                              </path>
+                            </svg></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="multibrand-sitemap__column col-12">
+                  <div class="sitemap__column__header"><span>Solutions</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="multibrand-sitemap__overlay always-visible visible"><button
+                class="show-more-less explore-more-btn"><svg aria-hidden="true" focusable="false" data-prefix="fas"
+                  data-icon="angle-right" class="svg-inline--fa fa-angle-right " role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" style="color: red; margin-right: 7px;">
+                  <path fill="currentColor"
+                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z">
+                  </path>
+                </svg><span class="label">More</span></button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -617,12 +617,11 @@
   <meta name="urn:adobe:aue:system:aemconnection" content="aem:https://author-p140494-e1434146.adobeaemcloud.com">
   <meta name="urn:adobe:aue:config:extensions" content="https://47679-workflowextension.adobeio-static.net">
 
-  <link rel="apple-touch-icon" href="logo192.png">
-  <link rel="manifest" href="manifest.json">
 
   <!-- <script defer="defer" src="./scripts/main.6081129b.js.download"></script> -->
   <link href="./styles/main.904e4224.css" rel="stylesheet">
   <script src="https://universal-editor-service.experiencecloud.live/corslib/LATEST" async></script>
+  <script src="./scripts/integrateUE.js" data-publish-host="https://publish-p140494-e1434146.adobeaemcloud.com/" defer></script>
   
   <!-- <script src="./html-blk-poc_files/LATEST" async="true"></script> -->
 </head>
@@ -688,21 +687,35 @@
           <div class="vstack gap-3">
             <div
               data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/copy-of-banner-headline/jcr:content/data/master"
-              data-aue-type="reference" data-aue-title="banner-headline">
+              data-aue-type="reference"
+              data-aue-title="banner-headline"
+              data-graph-key="bannerHeadlineCardByPath"
+              data-graph-path="POC/bannerHeadline"
+            >
               <div>
-                <h2 class="eyebrow" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">Funds at
-                  Blackrock new change</h2>
+                <h2 class="eyebrow" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
+                  Funds
+                </h2>
                 <div style="width: 32px; height: 3px; background-color: rgb(255, 71, 19);"></div>
               </div>
-              <div class="headline col-xl-10 col-sm-11 col-xs-11 fs-xs-1 my-5" data-aue-type="text"
-                data-aue-prop="title" data-aue-label="title">Funds that match up with investing goals and preferences.
-                We have what you need updated new</div>
-              <div class="intro col-xl-7 col-lg-7 fw-medium" data-aue-type="richtext" data-aue-prop="description"
-                data-aue-label="description">
-                <p><strong>Updated</strong> Each&nbsp;<strong>investor</strong> has a different
+              <div class="headline col-xl-10 col-sm-11 col-xs-11 fs-xs-1 my-5"
+                data-aue-type="text"
+                data-aue-prop="title"
+                data-aue-label="title"
+              >
+                Funds that match up with investing goals and preferences
+              </div>
+              <div class="intro col-xl-7 col-lg-7 fw-medium"
+                data-aue-type="richtext"
+                data-aue-prop="description"
+                data-aue-label="description"
+              >
+                <p>
+                  <strong>Updated</strong> Each&nbsp;<strong>investor</strong> has a different
                   <strong><em>story</em></strong>, and we are <em><strong>steadfast</strong></em> partners to our
                   clients in the UK because we listen to every one of them. Our full range of funds is one
-                  <strong>way</strong> we're helping more investors build solid <u>financial</u> futures new</p>
+                  <strong>way</strong> we're helping more investors build solid
+                </p>
               </div>
             </div>
             <div class="searchbox">
@@ -722,8 +735,7 @@
             </div>
             <div class="tiles-block">
               <div class="tiles row">
-                <div class="tile col-lg-6 col-11" data-aue-type="reference"
-                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/fifth-card/jcr:content/data/master">
+                <div class="tile col-lg-6 col-11">
                   <div class="content-wrapper">
                     <div class="tile-content ">
                       <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
@@ -751,8 +763,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile col-lg-6 col-11" data-aue-type="reference"
-                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/first-card/jcr:content/data/master">
+                <div class="tile col-lg-6 col-11">
                   <div class="content-wrapper">
                     <div class="tile-content ">
                       <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
@@ -780,8 +791,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile col-lg-6 col-11" data-aue-type="reference"
-                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/forth-card/jcr:content/data/master">
+                <div class="tile col-lg-6 col-11">
                   <div class="content-wrapper">
                     <div class="tile-content ">
                       <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
@@ -809,8 +819,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile col-lg-6 col-11" data-aue-type="reference"
-                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/second-card/jcr:content/data/master">
+                <div class="tile col-lg-6 col-11"
+                  
+                >
                   <div class="content-wrapper">
                     <div class="tile-content ">
                       <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
@@ -838,8 +849,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile col-lg-6 col-11" data-aue-type="reference"
-                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/sixth-card/jcr:content/data/master">
+                <div class="tile col-lg-6 col-11">
                   <div class="content-wrapper">
                     <div class="tile-content ">
                       <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
@@ -867,8 +877,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tile col-lg-6 col-11" data-aue-type="reference"
-                  data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/third-card/jcr:content/data/master">
+                <div class="tile col-lg-6 col-11">
                   <div class="content-wrapper">
                     <div class="tile-content ">
                       <div class="headline" data-aue-type="text" data-aue-prop="headline" data-aue-label="headline">
@@ -901,8 +910,7 @@
           </div>
         </div>
       </div>
-      <div data-aue-resource="urn:aemconnection:/content/dam/blackrock/uk/landing/teaser/jcr:content/data/master"
-        data-aue-type="reference" data-aue-title="teaser">
+      <div>
         <div class="teaser row">
           <div class="mx-auto py-5 px-2 col-xl-11 col-lg-11 col-sm-11">
             <div class="row">

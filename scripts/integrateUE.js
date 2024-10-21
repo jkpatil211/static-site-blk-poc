@@ -43,21 +43,30 @@
         return;
     }
 
-    const data = await fetchData(`${publishHostUrl}graphql/execute.json/${graphPath}`);
-
-    const item = data?.[graphKey]?.item;
-    const contentFragmentKeys = Object.keys(item).filter(key => !key.startsWith('_'));
-
-    for (let i = 0; i <= contentFragmentKeys.length; i++) {
-        const key = contentFragmentKeys[i];
-        // check if this needs to be changed to data-aue-label
-        const contentNode = bannerHeadline.querySelector(`*[data-aue-prop="${key}"]`);
-        if (!contentNode) continue;
-
-        if (contentNode?.dataset?.aueType === 'text') {
-            contentNode.innerText = item?.[key];
-        } else if (contentNode?.dataset?.aueType === "richtext") {
-            contentNode.innerHTML = item?.[key]?.html;
+    async function populateContent() {
+        const data = await fetchData(`${publishHostUrl}graphql/execute.json/${graphPath}`);
+        console.log('data', data);
+        const item = data?.[graphKey]?.item;
+        let contentFragmentKeys = Object.keys(item).filter(key => !key.startsWith('_'));
+        // console.log('data item -->', item, contentFragmentKeys);
+        contentFragmentKeys = [ ...contentFragmentKeys, 'subheadline' ];
+    
+        for (let i = 0; i <= contentFragmentKeys.length; i++) {
+            const key = contentFragmentKeys[i];
+            // check if this needs to be changed to data-aue-label
+            const contentNode = bannerHeadline.querySelector(`*[data-aue-prop="${key}"]`);
+            if (!contentNode) continue;
+    
+            if (contentNode?.dataset?.aueType === 'text') {
+                contentNode.innerText = item?.[key];
+            } else if (contentNode?.dataset?.aueType === "richtext") {
+                contentNode.innerHTML = item?.[key]?.html;
+            }
+            console.log('contentNode->', contentNode);
         }
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        populateContent();
+    });
 })()
